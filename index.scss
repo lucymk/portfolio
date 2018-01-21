@@ -1,0 +1,46 @@
+$offwhite: #fff8c8;
+$yellow: #eaa525;
+$lightblue: #6bbebd;
+$darkblue: #1b427e;
+$red: #e43000a;
+
+$biggestFont: 5rem;
+$mediumFont: 3rem;
+$smallestFont: 5rem;
+
+$font: 'Dosis', sans-serif;
+$alt-font: 'Bubbler One', sans-serif;
+
+body {
+	height: 100vh;
+	background-image: url(assets/geoBackground.crdownload); 
+	background-size: cover;
+	margin: 0;
+	font-family: $font;
+}
+
+nav {
+	background-color: white;
+	height: 15vh;
+	width: 100vw;
+	margin:0;
+	border-bottom: 10px solid $lightblue;
+	display: flex;
+	justify-content: space-between;
+
+	.nav-name {
+		font-size: $biggestFont;
+		width: 50vw;
+		height: 15vh;
+	}
+
+	.nav-links {
+		height: 15vh;
+		width: 50vw;
+		font-size: $mediumFont;
+		display: flex;
+		justify-content: space-between;
+
+	}
+}
+

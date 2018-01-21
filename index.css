@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  background-image: url(assets/geoBackground.crdownload);
+  background-size: cover;
+  margin: 0;
+  font-family: "Dosis", sans-serif; }
+
+nav {
+  background-color: white;
+  height: 15vh;
+  width: 100vw;
+  margin: 0;
+  border-bottom: 10px solid #6bbebd;
+  display: flex;
+  justify-content: space-between; }
+  nav .nav-name {
+    font-size: 5rem;
+    width: 50vw;
+    height: 15vh; }
+  nav .nav-links {
+    height: 15vh;
+    width: 50vw;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between; }
+
+/*# sourceMappingURL=index.css.map */
