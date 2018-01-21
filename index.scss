@@ -4,12 +4,18 @@ $lightblue: #6bbebd;
 $darkblue: #1b427e;
 $red: #e43000a;
 
-$biggestFont: 5rem;
-$mediumFont: 3rem;
-$smallestFont: 5rem;
+$biggestFontComp: 5rem;
+$mediumFontComp: 3rem;
+$smallestFontComp: 2rem;
+
+$biggestFontMob: 2rem;
+$mediumFontMob: 1.25rem;
+$smallestFontMob: 1rem;
 
 $font: 'Dosis', sans-serif;
 $alt-font: 'Bubbler One', sans-serif;
+
+$borderRadius: 10px;
 
 body {
 	height: 100vh;
@@ -19,28 +25,87 @@ body {
 	font-family: $font;
 }
 
-nav {
+.nav {
 	background-color: white;
-	height: 15vh;
+	height: 20vh;
+	min-height: 105px;
 	width: 100vw;
 	margin:0;
 	border-bottom: 10px solid $lightblue;
 	display: flex;
+	flex-direction: row;
+	align-items: baseline;
 	justify-content: space-between;
+	padding: 1%;
+	box-sizing: border-box;
 
 	.nav-name {
-		font-size: $biggestFont;
+		font-size: $biggestFontComp;
 		width: 50vw;
-		height: 15vh;
+		height: 20vh;
+
 	}
 
 	.nav-links {
-		height: 15vh;
+
+		a:hover {
+			text-decoration: underline;
+			text-decoration-color: $yellow;
+		}
+
+		height: 20vh;
 		width: 50vw;
-		font-size: $mediumFont;
+		font-size: $mediumFontComp;
 		display: flex;
 		justify-content: space-between;
 
+	}
+}
+
+.main {
+	border: 4px solid black;
+	width: 80vw;
+	height: fit-content;
+	margin: 10vh 10vw 10vh 10vw;
+	font-size: $smallestFontComp;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.85);
+	//border-radius: $borderRadius;
+
+	.main__Profile {
+		padding: 5vh 5vw 7vh 5vw;
+
+		:first-child {
+			color: $lightblue;
+			font-size: $mediumFontComp;
+			font-weight: bold;
+			padding-right: 1vw;
+		}
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	.nav {
+		height: 10vh;
+		min-height: 55px;
+
+		.nav-name {
+		font-size: $biggestFontMob;
+		}
+
+		.nav-links {
+		font-size: $mediumFontMob;
+
+			a:click {
+			text-decoration: underline;
+			text-decoration-color: $yellow;
+			}
+		}
+	}
+
+	.main {
+		font-size: $mediumFontMob;
 	}
 }
 
