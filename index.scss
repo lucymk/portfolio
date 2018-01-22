@@ -16,6 +16,7 @@ $font: 'Dosis', sans-serif;
 $alt-font: 'Bubbler One', sans-serif;
 
 $mainSectionPadding: 5vh 5vw 5vh 5vw;
+$mobileSectionPadding: 2vh 5vw 2vh 5vw;
 
 body {
 	height: 100vh;
@@ -95,36 +96,25 @@ body {
 
 .main__About {
 	padding: $mainSectionPadding;
-	flex-direction: row;
 }
 
 .main__About__InitialDisplay {
 
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
 	flex-wrap: wrap;
 
-	:first-child {
-		width: 70vw;
-		display: flex;
-		justify-content: space-around;
 
 		img {
 			height: 40vh;
-			width: auto;
+			max-width: 35vw;
 		}
-	}
-
-	:nth-child(2) {
-		width: 70vw;
-		display: flex;
 
 		p {
-			display: block;
 			width: 35vw;
 			text-align: center;
 		}
-	}
 
 }
 
@@ -159,6 +149,47 @@ body {
 
 	.main {
 		font-size: $mediumFontMob;
+		width: fit-content;
+		margin: 5vh auto 5vh auto;
 	}
+
+	.main__Profile {
+		width: 70vw;	
+	}
+
+	.main__About {
+	padding: $mobileSectionPadding;
+	width: fit-content;
+	}
+
+	.main__About__InitialDisplay {
+
+	display: flex;
+	flex-direction: column;
+
+		:nth-child(2) {
+			order: 3;
+		}
+
+		:nth-child(3) {
+			order: 2;
+		}
+
+		:nth-child(4) {
+			order: 4;
+		}
+
+		img {
+			height: 28vh;
+			width: auto;
+			max-width: none;
+		}
+
+		p {
+			text-align: center;
+			width: inherit;
+		}
+	
+}
 }
 
