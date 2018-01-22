@@ -15,7 +15,7 @@ $smallestFontMob: 1rem;
 $font: 'Dosis', sans-serif;
 $alt-font: 'Bubbler One', sans-serif;
 
-$borderRadius: 10px;
+$mainSectionPadding: 5vh 5vw 5vh 5vw;
 
 body {
 	height: 100vh;
@@ -25,6 +25,10 @@ body {
 	font-family: $font;
 }
 
+.displayNone {
+	display: none;
+}
+
 .nav {
 	background-color: white;
 	height: 20vh;
@@ -32,35 +36,41 @@ body {
 	width: 100vw;
 	margin:0;
 	border-bottom: 10px solid $lightblue;
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-	justify-content: space-between;
 	padding: 1%;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
 
-	.nav-name {
-		font-size: $biggestFontComp;
-		width: 50vw;
-		height: 20vh;
 
-	}
+.nav-name {
+	font-size: $biggestFontComp;
+	white-space: nowrap;
+	margin-right: 5vw;
+}
 
-	.nav-links {
+.nav-name:hover {
+	text-decoration: underline;
+	text-decoration-color: $yellow;
+}
 
-		a:hover {
-			text-decoration: underline;
-			text-decoration-color: $yellow;
-		}
+.nav-links {
+	height: fit-content;
+	width: 50vw;
+	min-width: 185px;
+	font-size: $mediumFontComp;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 
-		height: 20vh;
-		width: 50vw;
-		font-size: $mediumFontComp;
-		display: flex;
-		justify-content: space-between;
-
+	a:hover {
+		text-decoration: underline;
+		text-decoration-color: $yellow;
 	}
 }
+
 
 .main {
 	border: 4px solid black;
@@ -70,37 +80,80 @@ body {
 	font-size: $smallestFontComp;
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.85);
-	//border-radius: $borderRadius;
+}
 
-	.main__Profile {
-		padding: 5vh 5vw 7vh 5vw;
+.main__Profile {
+	padding: $mainSectionPadding;
 
-		:first-child {
-			color: $lightblue;
-			font-size: $mediumFontComp;
-			font-weight: bold;
-			padding-right: 1vw;
-		}
+	:first-child {
+		color: $lightblue;
+		font-size: $mediumFontComp;
+		font-weight: bold;
+		padding-right: 1vw;
 	}
 }
+
+.main__About {
+	padding: $mainSectionPadding;
+	flex-direction: row;
+}
+
+.main__About__InitialDisplay {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	:first-child {
+		width: 70vw;
+		display: flex;
+		justify-content: space-around;
+
+		img {
+			height: 40vh;
+			width: auto;
+		}
+	}
+
+	:nth-child(2) {
+		width: 70vw;
+		display: flex;
+
+		p {
+			display: block;
+			width: 35vw;
+			text-align: center;
+		}
+	}
+
+}
+
+.main__Projects {
+	padding: $mainSectionPadding;
+}
+
+.main__Contact {
+	padding: $mainSectionPadding;
+}
+
 
 
 @media screen and (max-width: 900px) {
 	.nav {
 		height: 10vh;
 		min-height: 55px;
+	}
 
-		.nav-name {
-		font-size: $biggestFontMob;
-		}
+	.nav-name {
+	font-size: $biggestFontMob;
+	}
 
-		.nav-links {
-		font-size: $mediumFontMob;
+	.nav-links {
+	font-size: $mediumFontMob;
 
-			a:click {
-			text-decoration: underline;
-			text-decoration-color: $yellow;
-			}
+		a:click {
+		text-decoration: underline;
+		text-decoration-color: $yellow;
 		}
 	}
 
