@@ -17,13 +17,8 @@ var mainDivArray = Array.from(document.getElementsByClassName('main__Div'));
 		});
 	});
 
-//ABOUT PAGE
+// var submitBtn = document.getElementById('submitBtn');
 
-var aboutSkills = document.getElementById('aboutSkills');
-var aboutSkillsP = document.getElementById('aboutSkillsP');
-var aboutSkillsText = document.getElementById('aboutSkillsText');
-
-aboutSkillsP.addEventListener("click", function(){
-	aboutSkills.classList.toggle('displayNone');
-	aboutSkillsText.classList.toggle('displayNone');
-})
+// submitBtn.addEventListener("click", function(e){
+// 	window.location.replace("file:///Users/lu_lu92/workStuff/portfolio/index.html");
+// })

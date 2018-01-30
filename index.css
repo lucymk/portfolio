@@ -103,6 +103,68 @@ body {
 .main__Contact {
   padding: 5vh 5vw 5vh 5vw; }
 
+.main__Contact__Cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.main__Contact__Form {
+  width: 50vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.5rem; }
+  .main__Contact__Form input {
+    width: 50vw;
+    padding: 2vh 1vw 2vh 1vw;
+    border: 1px solid #6bbebd;
+    box-sizing: border-box; }
+  .main__Contact__Form input:focus {
+    outline: 2px solid #eaa525; }
+  .main__Contact__Form textarea {
+    width: 50vw;
+    padding: 2vh 1vw 2vh 1vw;
+    height: 10vh;
+    border: 1px solid #6bbebd;
+    box-sizing: border-box; }
+  .main__Contact__Form textarea:focus {
+    outline: 2px solid #eaa525; }
+  .main__Contact__Form label {
+    width: 50vw;
+    padding: 1vh 0 1vh 0; }
+  .main__Contact__Form :nth-child(7) {
+    width: 12vw;
+    height: 8vh;
+    align-self: center;
+    background-color: #eaa525;
+    border: none;
+    margin-top: 2vh;
+    font-family: "Dosis", sans-serif;
+    font-size: 1.5rem;
+    padding: 1vh 2vw 1vh 2vw;
+    text-align: center; }
+  .main__Contact__Form :nth-child(7):focus {
+    background-color: white;
+    outline: none;
+    border: 1px solid #eaa525; }
+
+.main__Contact__Links {
+  width: 17.5vw;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 2.5vw;
+  border-left: 1px solid black;
+  padding-left: 2.5vw; }
+  .main__Contact__Links img {
+    width: 5vw; }
+  .main__Contact__Links a {
+    height: fit-content; }
+
 @media screen and (max-width: 900px) {
   .nav {
     height: 10vh;
@@ -137,8 +199,21 @@ body {
 
   .main__Skills__CV img {
     height: 10vh;
-    margin-bottom: -4vh; } }
-@media screen and (max-width: 410px) {
+    margin-bottom: -4vh; }
+
+  .main__Contact__Form {
+    width: 40vw; }
+    .main__Contact__Form input {
+      width: 40vw; }
+    .main__Contact__Form label {
+      width: 40vw; }
+    .main__Contact__Form textarea {
+      width: 40vw; }
+
+  .main__Contact__Links {
+    width: 30vw;
+    font-size: 1rem; } }
+@media screen and (max-width: 500px) {
   .main {
     height: 80vh;
     display: flex;
@@ -152,8 +227,48 @@ body {
     align-items: justify-content;
     padding-bottom: 0; }
     .main__Skills__CV p {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      width: 100%; }
     .main__Skills__CV img {
-      margin: 1vh 1vw 0 1vw; } }
+      margin: 1vh 1vw 0 1vw; }
+
+  .main__Contact__Cont {
+    flex-direction: column;
+    width: fit-content;
+    height: 70vh;
+    justify-content: distribute-space; }
+
+  .main__Contact__Form {
+    font-size: 1.25rem;
+    width: 60vw; }
+    .main__Contact__Form input {
+      width: 60vw; }
+    .main__Contact__Form label {
+      width: 60vw; }
+    .main__Contact__Form textarea {
+      width: 60vw; }
+    .main__Contact__Form :nth-child(7) {
+      width: 60vw;
+      height: 5vh;
+      font-size: 1.25rem;
+      padding: 0; }
+
+  .main__Contact__Links {
+    border-top: 1px solid black;
+    border-left: none;
+    margin: 5vh 0 0 0;
+    padding: 5vh 0 0 0;
+    width: 60vw;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .main__Contact__Links img {
+      width: 10vw; }
+    .main__Contact__Links span {
+      width: 100%;
+      margin-bottom: 5vh; }
+    .main__Contact__Links :first-child {
+      order: 1; }
+    .main__Contact__Links :nth-child(3) {
+      order: 1; } }
 
 /*# sourceMappingURL=index.css.map */

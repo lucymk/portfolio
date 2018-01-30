@@ -153,6 +153,91 @@ body {
 	padding: $mainSectionPadding;
 }
 
+.main__Contact__Cont {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.main__Contact__Form {
+	width: 50vw;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column; 
+	text-align: left;
+	font-size: 1.5rem;
+	
+
+	input {
+		width: 50vw;
+		padding: 2vh 1vw 2vh 1vw;
+		border: 1px solid $lightblue;
+		box-sizing: border-box;
+
+	}
+
+	input:focus {
+		outline: 2px solid $yellow;
+	}
+
+	textarea {
+		width: 50vw;
+		padding: 2vh 1vw 2vh 1vw;
+		height: 10vh;
+		border: 1px solid $lightblue;
+		box-sizing: border-box;
+	}
+
+	textarea:focus {
+		outline: 2px solid $yellow;
+	}
+
+	label {
+		width: 50vw;
+		padding: 1vh 0 1vh 0;
+	}
+
+	:nth-child(7) {
+		width: 12vw;
+		height: 8vh;
+		align-self: center;
+		background-color: $yellow;
+		border: none;
+		margin-top: 2vh;
+		font-family: $font;
+		font-size: 1.5rem;
+		padding: 1vh 2vw 1vh 2vw;
+		text-align: center;
+	}
+
+	:nth-child(7):focus {
+		background-color: rgba(255, 255, 255, 1);
+		outline: none;
+		border: 1px solid $yellow;
+	}
+}
+
+.main__Contact__Links {
+	width: 17.5vw;
+	font-size: 1rem;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 2.5vw;
+	border-left: 1px solid black;
+	padding-left: 2.5vw;
+
+	img {
+		width: 5vw;
+	}
+
+	a {
+		height: fit-content;
+	}
+}
+
 
 
 @media screen and (max-width: 900px) {
@@ -203,9 +288,30 @@ body {
 			margin-bottom: -4vh;
 		}
 	}
+
+	.main__Contact__Form {
+		width: 40vw;
+
+		input {
+			width: 40vw;
+		}
+
+		label {
+			width: 40vw;
+		}
+
+		textarea {
+			width: 40vw;
+		}
+	}
+
+	.main__Contact__Links {
+		width: 30vw;
+		font-size: $smallestFontMob;
+	}
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 500px) {
 
 		.main {
 			height: 80vh;
@@ -224,11 +330,70 @@ body {
 
 			p {
 				margin-bottom: 0;
+				width: 100%;
 			}
 
 			img {
 				margin: 1vh 1vw 0 1vw;
 			}
+		}
+
+		.main__Contact__Cont {
+			flex-direction: column;
+			width: fit-content;
+			height: 70vh;
+			justify-content: distribute-space;
+		}
+		
+		.main__Contact__Form {
+			font-size: 1.25rem;
+			width: 60vw;
+
+			input {
+				width: 60vw;
+			}
+
+			label {
+				width: 60vw;
+			}
+
+			textarea {
+				width: 60vw;
+			}
+
+			:nth-child(7) {
+				width: 60vw;
+				height: 5vh;
+				font-size: 1.25rem;
+				padding: 0;
+			}
+		}
+		.main__Contact__Links {
+			border-top: 1px solid black;
+			border-left: none;
+			margin: 5vh 0 0 0;
+			padding: 5vh 0 0 0;
+			width: 60vw;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			img {
+				width: 10vw;
+			}
+
+			span {
+				width: 100%;
+				margin-bottom: 5vh;
+			}
+
+			:first-child {
+				order: 1;
+			}
+
+			:nth-child(3) {
+				order: 1;
+			}
+
 		}
 
 	}
