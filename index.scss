@@ -1,5 +1,5 @@
 $offwhite: #fff8c8;
-$yellow: #eaa525;
+$yellow: #ffc444;
 $lightblue: #6bbebd;
 $darkblue: #1b427e;
 $red: #e43000a;
@@ -147,6 +147,22 @@ body {
 
 .main__Projects {
 	padding: $mainSectionPadding;
+}
+
+.main__Projects__Photos {
+	display: flex;
+	justify-content: space-around;
+	width: 70vw;
+
+	img {
+		width: 16.5vw;
+		height: auto;
+	}
+
+	a {
+		width: fit-content;
+	}
+
 }
 
 .main__Contact {
@@ -335,6 +351,18 @@ body {
 
 			img {
 				margin: 1vh 1vw 0 1vw;
+			}
+		}
+
+		.main__Projects__Photos {
+			flex-direction: row;
+			height: 70vh;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+
+			img {
+				width: 27vw;
 			}
 		}
 

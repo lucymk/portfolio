@@ -29,7 +29,7 @@ body {
 
 .nav-name:hover {
   text-decoration: underline;
-  text-decoration-color: #eaa525; }
+  text-decoration-color: #ffc444; }
 
 .nav-links {
   height: fit-content;
@@ -41,7 +41,7 @@ body {
   justify-content: space-between; }
   .nav-links a:hover {
     text-decoration: underline;
-    text-decoration-color: #eaa525; }
+    text-decoration-color: #ffc444; }
 
 .main {
   border: 4px solid black;
@@ -75,7 +75,7 @@ body {
   background-color: white;
   width: 100%; }
   .main__Skills__Table th {
-    background-color: #eaa525; }
+    background-color: #ffc444; }
   .main__Skills__Table th, .main__Skills__Table td {
     padding: 1vh 1vw 1vh 1vw;
     box-sizing: border-box;
@@ -100,6 +100,16 @@ body {
 .main__Projects {
   padding: 5vh 5vw 5vh 5vw; }
 
+.main__Projects__Photos {
+  display: flex;
+  justify-content: space-around;
+  width: 70vw; }
+  .main__Projects__Photos img {
+    width: 16.5vw;
+    height: auto; }
+  .main__Projects__Photos a {
+    width: fit-content; }
+
 .main__Contact {
   padding: 5vh 5vw 5vh 5vw; }
 
@@ -121,7 +131,7 @@ body {
     border: 1px solid #6bbebd;
     box-sizing: border-box; }
   .main__Contact__Form input:focus {
-    outline: 2px solid #eaa525; }
+    outline: 2px solid #ffc444; }
   .main__Contact__Form textarea {
     width: 50vw;
     padding: 2vh 1vw 2vh 1vw;
@@ -129,7 +139,7 @@ body {
     border: 1px solid #6bbebd;
     box-sizing: border-box; }
   .main__Contact__Form textarea:focus {
-    outline: 2px solid #eaa525; }
+    outline: 2px solid #ffc444; }
   .main__Contact__Form label {
     width: 50vw;
     padding: 1vh 0 1vh 0; }
@@ -137,7 +147,7 @@ body {
     width: 12vw;
     height: 8vh;
     align-self: center;
-    background-color: #eaa525;
+    background-color: #ffc444;
     border: none;
     margin-top: 2vh;
     font-family: "Dosis", sans-serif;
@@ -147,7 +157,7 @@ body {
   .main__Contact__Form :nth-child(7):focus {
     background-color: white;
     outline: none;
-    border: 1px solid #eaa525; }
+    border: 1px solid #ffc444; }
 
 .main__Contact__Links {
   width: 17.5vw;
@@ -177,7 +187,7 @@ body {
     font-size: 1.25rem; }
     .nav-links a:click {
       text-decoration: underline;
-      text-decoration-color: #eaa525; }
+      text-decoration-color: #ffc444; }
 
   .main {
     font-size: 1.25rem;
@@ -232,6 +242,14 @@ body {
     .main__Skills__CV img {
       margin: 1vh 1vw 0 1vw; }
 
+  .main__Projects__Photos {
+    flex-direction: row;
+    height: 70vh;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .main__Projects__Photos img {
+      width: 27vw; }
+
   .main__Contact__Cont {
     flex-direction: column;
     width: fit-content;
@@ -271,4 +289,4 @@ body {
     .main__Contact__Links :nth-child(3) {
       order: 1; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.CSS.map */
