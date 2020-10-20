@@ -33,4 +33,3 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Yes
-          echo ${{ outputs.response }}
